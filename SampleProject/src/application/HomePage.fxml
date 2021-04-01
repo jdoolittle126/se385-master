@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.PerspectiveCamera?>
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+
+<AnchorPane prefHeight="532.0" prefWidth="248.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Accordion layoutX="26.0" layoutY="189.0" />
+      <PerspectiveCamera layoutX="379.0" layoutY="190.0" />
+      <PointLight layoutX="455.0" layoutY="138.0" lightOn="true">
+         <color>
+            <Color red="0.5028630495071411" green="0.8552631735801697" blue="0.15046297013759613" />
+         </color>
+      </PointLight>
+      <Circle fill="#e8ff1f" layoutX="114.0" layoutY="114.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="80.0" layoutY="81.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="154.0" layoutY="81.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse layoutX="120.0" layoutY="149.0" radiusX="15.0" radiusY="27.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
