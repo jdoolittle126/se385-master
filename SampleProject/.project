@@ -20,4 +20,26 @@
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/application/earth.png</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/earth.png</locationURI>
+		</link>
+		<link>
+			<name>src/application/mars.png</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/mars.png</locationURI>
+		</link>
+		<link>
+			<name>src/application/moon.png</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/moon.png</locationURI>
+		</link>
+		<link>
+			<name>src/application/sun.png</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/sun.png</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
