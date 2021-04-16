@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * @author Jonathan Doolittle
  * 
@@ -8,8 +10,10 @@ public class Main {
 	
 	public static void main(String[] args) {
 				
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter your first name, then press enter and enter your last name");
 		//Create three sales people for testing, using 3 different methods
-		SalesPerson newPerson = new SalesPerson("Jonathan", "Doolittle");
+		SalesPerson newPerson = new SalesPerson(scanner.next(), scanner.next());
 		
 		SalesPerson anotherPerson = new SalesPerson();
 		anotherPerson.setFirstName("Jonathan");
@@ -33,6 +37,8 @@ public class Main {
 		comparisonTest(newPerson, anotherPerson);
 		comparisonTest(newPerson, aThirdPerson);
 		
+		scanner.close();
+	
 	}
 	
 	/**
