@@ -37,7 +37,7 @@ public class Car {
 	 * Creates a new Car object with default values
 	 */
 	public Car() {
-		carsCreated++;
+		carsCreated++; //Increase the global car count
 		this.brand = "No Brand";
 		this.color = "No Color Specified";
 		this.numberOfDoors = 0;
@@ -52,11 +52,11 @@ public class Car {
 	 * 					if the value for <code>numberOfDoors</code> is a negative value
 	 */
 	public Car(String brand, String color, int numberOfDoors) throws Exception {
-		this();
+		this(); // Base constructor for the addition of a car to the global count
 		this.brand = brand;
 		this.color = color;
 		this.numberOfDoors = numberOfDoors;
-		if(numberOfDoors < 0) {
+		if(numberOfDoors < 0) { // Catch an illogical number of doors
 			throw new Exception("Cannot use a negative value for Number of Doors");
 		}
 	}

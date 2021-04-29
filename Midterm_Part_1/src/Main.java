@@ -37,11 +37,11 @@ public class Main {
 	public static int gatherInput(Scanner scanner) {
 		int value;
 		try {
-			value = scanner.nextInt();
+			value = scanner.nextInt(); //Try capture only an int
 		} catch (InputMismatchException e) {
 			System.out.println("Hmm, that doesn't look quite right. Lets try again. >");
-			scanner.next();
-			value = gatherInput(scanner);
+			scanner.next(); //Flush the last input out of the scanner
+			value = gatherInput(scanner); // Recursively ask until the condition is met
 		}
 		return value;
 	}

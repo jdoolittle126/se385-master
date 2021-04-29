@@ -53,6 +53,7 @@ public class IntegerCount {
 	public IntegerCount(int val, int count) throws Exception {
 		startingValue = val;
 		countFactor = count;
+		//Throw two exceptions for incorrect usage
 		if(val < count) {
 			throw new Exception("The value you entered is too small to be reduced.");
 		}
@@ -93,7 +94,7 @@ public class IntegerCount {
 	public int getTotal() {
 		int total = 0;
 		for(int i = 0; i < size; i++) {
-			total += values[i];
+			total += values[i]; //Aggregate all of the value in the array
 		}
 		return total;
 	}
@@ -105,11 +106,11 @@ public class IntegerCount {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		String seperator = ", ";
+		String separator = ", "; // String value to separate all items in array with
 		for(int i = 0; i < size; i++) {
-			sb.append(values[i] + seperator);
+			sb.append(values[i] + separator); // Use the string builder to create a visual for the array
 		}		
-		return sb.toString().substring(0, sb.length() - seperator.length());
+		return sb.toString().substring(0, sb.length() - separator.length()); // Remove the final separator -> (1, 7, ) becomes (1, 7)
 	}
 	
 
