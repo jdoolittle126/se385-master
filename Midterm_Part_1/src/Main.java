@@ -12,7 +12,6 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-
 		// Encapsulate in try to ensure scanner is always closed
 		try (Scanner scanner = new Scanner(System.in)) {
 			// Message for the user
