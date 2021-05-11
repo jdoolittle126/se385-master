@@ -110,7 +110,7 @@ public class IntegerCount {
 		for(int i = 0; i < size; i++) {
 			sb.append(values[i] + separator); // Use the string builder to create a visual for the array
 		}		
-		return sb.toString().substring(0, sb.length() - separator.length()); // Remove the final separator -> (1, 7, ) becomes (1, 7)
+		return sb.toString().substring(0, sb.length() - separator.length()) + " Total: " + getTotal(); // Remove the final separator -> (1, 7, ) becomes (1, 7)
 	}
 	
 
