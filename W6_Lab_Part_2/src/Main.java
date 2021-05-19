@@ -1,6 +1,3 @@
-import java.text.NumberFormat;
-import java.util.Locale;
-
 /**
  * 
  * Driver program for week 6 lab, part 2.

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalculatorController">
+<children>
+      <Label layoutX="51.0" layoutY="234.0" prefHeight="18.0" prefWidth="150.0" text="Gender">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </Label>
+  <Label alignment="CENTER" layoutX="41.0" layoutY="10.0" prefHeight="89.0" prefWidth="319.0" style="&#10;" text="Hi! Let's calculate how many 230 calorie candy bars you would need to to eat to maintain your weight!" textAlignment="CENTER" textFill="#9f9f9f" wrapText="true">
+    <font>
+      <Font size="18.0" />
+    </font>
+  </Label>
+      <ChoiceBox fx:id="choiceActivity" layoutX="200.0" layoutY="275.0" prefHeight="26.0" prefWidth="152.0" />
+      <Label layoutX="51.0" layoutY="115.0" prefHeight="18.0" prefWidth="150.0" text="Weight (lbs)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinnerWeight" editable="true" layoutX="200.0" layoutY="116.0" />
+      <Label layoutX="51.0" layoutY="152.0" prefHeight="18.0" prefWidth="150.0" text="Height (in)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinnerHeight" editable="true" layoutX="200.0" layoutY="153.0" />
+      <Label layoutX="51.0" layoutY="189.0" prefHeight="18.0" prefWidth="150.0" text="Age (yrs)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinnerAge" editable="true" layoutX="200.0" layoutY="189.0" />
+      <RadioButton fx:id="radioMale" layoutX="197.0" layoutY="232.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="radioFemale" layoutX="282.0" layoutY="232.0" mnemonicParsing="false" text="Female" />
+      <Label layoutX="51.0" layoutY="274.0" prefHeight="18.0" prefWidth="150.0" text="Activity Level">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonCalculate" layoutX="64.0" layoutY="330.0" mnemonicParsing="false" onAction="#calculateResult" prefHeight="30.0" prefWidth="266.0" text="Calculate!" />
+      <Label fx:id="labelResult" alignment="CENTER" layoutX="42.0" layoutY="376.0" prefHeight="30.0" prefWidth="319.0" style="&#10;" text="Result: ~" textAlignment="CENTER" textFill="#9f9f9f" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+</children>
+</AnchorPane>
